@@ -64,9 +64,9 @@ def main():
     assert vocab_size > 0 and PAD_ID >=0 and B_ID >= 0
     hps = hps._replace(vocab_size=vocab_size, pad_idx=PAD_ID, bos_idx=B_ID)
 
-    print ("hyper-patameters:")
-    print (hps)
-    input("please check the hyper-parameters, and then press any key to continue >")
+#    print ("hyper-patameters:")
+#    print (hps)
+#    input("please check the hyper-parameters, and then press any key to continue >")
 
     mixpoet = MixPoetAUS(hps)
     mixpoet = mixpoet.to(device)
